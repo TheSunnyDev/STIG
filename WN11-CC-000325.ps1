@@ -17,10 +17,10 @@
     Documentation   : https://stigaview.com/products/win11/v2r7/WN11-CC-000325/
 
 .USAGE
-    Put any usage instructions here.
     Example syntax:
     PS C:\> .\STIG-ID-WN11-CC-000325.ps1 
 #>
 
+#Run this code in elevated PowerShell console.
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" `
   -Name "DisableAutomaticRestartSignOn" -Type DWord -Value 1
