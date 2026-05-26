@@ -27,3 +27,6 @@ If (!(Test-Path $path)) { New-Item -Path $path -Force }
 
 # Set the value
 Set-ItemProperty -Path $path -Name "AlwaysInstallElevated" -Type DWord -Value 0
+
+#Verify the script is successful. Expected Value is 0.
+Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Installer" -Name AlwaysInstallElevated
