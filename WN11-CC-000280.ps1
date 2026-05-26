@@ -12,15 +12,14 @@
     Version         : 1.0
     CVEs            : N/A
     Plugin IDs      : N/A
-    STIG-ID         : WN11-CC-000090
+    STIG-ID         : WN11-CC-000280
     Documentation   : https://stigaview.com/products/win11/v2r7/WN11-CC-000280/
 
-.USAGE
-    Example syntax:
+.EXAMPLE
     PS C:\> .\WN11-CC-000280.ps1
-#>
+    Note: Must be run in an elevated PowerShell console (Run as Administrator). 
 
-#Run this code in elevated PowerShell console.
+#>
 
 $path = "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services"
 If (!(Test-Path $path)) { New-Item -Path $path -Force }
