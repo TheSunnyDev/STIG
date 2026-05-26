@@ -17,7 +17,7 @@
 
  .EXAMPLE 
     PS C:\> .\WN11-CC-000110.ps1
-     Note: Must be run in an elevated PowerShell console (Run as Administrator). 
+    Note: Must be run in an elevated PowerShell console (Run as Administrator). 
 #>
 
 
