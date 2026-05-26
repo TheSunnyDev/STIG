@@ -1,6 +1,7 @@
 <#
 .SYNOPSIS
-    Enabling this setting ensures that policies will be reprocessed even if none have been changed, so any unauthorized changes are forced to match the domain-based group policy settings again.
+    This controls the ability of users to supply passwords automatically as part of their remote desktop connection.
+    Disabling this would allow anyone to use stored credentials to connect.
 
 .NOTES
     Author          : Sunny Cannon
