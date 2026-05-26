@@ -16,9 +16,8 @@
 
 .EXAMPLE
     PS C:\> .\WN11-CC-000295.ps1
+    Note: Must be run in an elevated PowerShell console (Run as Administrator). 
 #>
-
-#Run this code in an elevated PowerShell console.
 
 # Create the path if it doesn't exist
 $path = "HKLM:\SOFTWARE\Policies\Microsoft\Internet Explorer\Feeds"
