@@ -7,22 +7,16 @@
     LinkedIn        : linkedin.com/in/sunnycannon/
     GitHub          : github.com/TheSunnyDev
     Date Created    : 2026-05-01
-    Last Modified   : 2026-05-08
+    Last Modified   : 2026-05-24
     Version         : 1.0
     CVEs            : N/A
     Plugin IDs      : N/A
     STIG-ID         : WN11-AU-000500
     Documentation   : https://stigaview.com/products/win11/v2r7/WN11-AU-000500/
 
-.TESTED ON
-    Date(s) Tested  : 
-    Tested By       : 
-    Systems Tested  : 
-    PowerShell Ver. : 
-
-.USAGE
-    Example syntax:
+.EXAMPLE
     PS C:\> .\STIG-ID-WN10-AU-000500.ps1 
+    Note: Must be run in an elevated PowerShell console (Run as Administrator).
 #>
 
 $path = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application"
