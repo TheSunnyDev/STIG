@@ -22,9 +22,11 @@
 
 
 # Create the path if it doesn't exist
-$path = "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services"
+$path = "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Printers"
 If (!(Test-Path $path)) { New-Item -Path $path -Force }
-Set-ItemProperty -Path $path -Name "fAllowToGetHelp" -Type DWord -Value 0
+Set-ItemProperty -Path $path -Name "DisableHTTPPrinting" -Type DWord -Value 1
 
-#Verify the script is successful. Expected Value is 0/failure of script.
-Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" -Name fAllowToGetHelp
+#Verify the script is successful. Expected Value is 1.
+ Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Printers" -Name DisableHTTPPrinting
+ 
+
