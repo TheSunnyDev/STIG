@@ -15,12 +15,11 @@
     STIG-ID         : WN11-CC-000290
     Documentation   : https://stigaview.com/products/win11/v2r7/WN11-CC-000290/
 
-.USAGE
-    Example syntax:
+.EXAMPLE
     PS C:\> .\WN11-CC-000290.ps1
+     Note: Must be run in an elevated PowerShell console (Run as Administrator).
 #>
 
-#Run this code in elevated PowerShell console.
 $path = "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services"
 If (!(Test-Path $path)) { New-Item -Path $path -Force }
 Set-ItemProperty -Path $path -Name "MinEncryptionLevel" -Type DWord -Value 3
